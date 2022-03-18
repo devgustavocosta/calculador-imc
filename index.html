@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <title>Calculador de IMC</title>
+</head>
+<body>
+    <div class="container">
+            <h1>Calculador de IMC</h1>
+    <div class="display">
+            <p id="resultado">20.0</p>
+            <p id="categoria">Peso normal</p>
+        </div>
+        <div class="row">
+            <input type="range" min="20" max="200" value="20" id="peso" oninput="calculate()">
+            <span id="peso-val">20 kg</span>
+        </div>
+        <div class="row">
+            <input type="range" min="100" max="250" value="100" id="altura" oninput="calculate()">
+            <span id="altura-val">100 cm</span>
+        </div>
+        <div class="footer">Desenvolvido por <b>Gustavo Costa.</b></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
